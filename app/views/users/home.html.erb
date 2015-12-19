@@ -1,0 +1,31 @@
+<div class="page_container">
+  <div class="row">
+    <div class="col-md-12 update-container">
+      <%= form_tag(page_updates_path, remote: true) do %>
+          <%= text_area_tag 'content' %>
+          <br />
+          <%= submit_tag 'Update', class: 'btn btn-success' %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="row status_container">
+    <div class="col-md-12">
+      <% @page_updates.each do |single_update| %>
+        <div class="row single-update">
+          <div class="col-md-2 user-email">
+            <%= single_update.user.email %>
+          </div>
+          <div class="col-md-10">
+            <%= single_update.content %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+</div>
+
+
+
+

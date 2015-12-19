@@ -1,0 +1,27 @@
+body {
+  //background-color: red;
+}
+
+.page_container {
+  display: block;
+  width: 992px;
+  margin: 0 auto;
+  //border: 1px solid red;
+}
+
+.update-container form textarea {
+  width: 80%;
+  height: 50px;
+}
+
+.status_container {
+  margin-top: 40px;
+}
+
+.single-update {
+  margin: 20px 0;
+}
+
+.user-email {
+  color: darkblue;
+}
