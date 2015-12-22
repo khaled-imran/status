@@ -7,6 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<% if current_user.present? %>
+    <div class="user_creds" style="float: right; padding: 20px; color: #730E15; font-weight: bold;">
+      Logged in as <%= current_user.email %>
+    </div>
+<% end %>
 
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>

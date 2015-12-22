@@ -25,3 +25,29 @@ body {
 .user-email {
   color: darkblue;
 }
+
+.sse_alert {
+  width: 80%;
+  padding: 10px;
+  min-height: 30px;
+  background-color: cornflowerblue;
+  //margin-top: 30px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  //display: none;
+}
+
+.ago_time {
+  padding: 15px;
+  color: #ccc;
+  font-size: 10px;
+  font-style: italic;
+}
+
+.alert_container {
+  height: 40px;
+  display: inline-block;
+  width: 90%;
+  margin-top: 30px;
+}

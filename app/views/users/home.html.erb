@@ -1,4 +1,5 @@
 <div class="page_container">
+
   <div class="row">
     <div class="col-md-12 update-container">
       <%= form_tag(page_updates_path, remote: true) do %>
@@ -6,6 +7,13 @@
           <br />
           <%= submit_tag 'Update', class: 'btn btn-success' %>
       <% end %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="alert_container">
+      <div class="sse_alert">
+      </div>
     </div>
   </div>
 
@@ -19,7 +27,11 @@
           <div class="col-md-10">
             <%= single_update.content %>
           </div>
+          <div class="col-md-10 ago_time">
+            <%= single_update.time_string  %>
+          </div>
         </div>
+
       <% end %>
     </div>
   </div>
